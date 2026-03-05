@@ -52,13 +52,14 @@ a:active {
     color: #d4b44c;
 }
 
+
 .btn {
     font-size: 1.125rem;
+    text-align: center;
     font-weight: 500;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     padding: 0.5em 1em;
-    margin-right: 0.5em;
     margin-bottom: 1em;
     border-radius: 4.6px;
 }
@@ -89,7 +90,7 @@ a:active {
 header, 
 section, 
 footer {
-    padding: 2.875em 0;
+    padding: 1.25em 0;
 }
 
 header, 
@@ -114,12 +115,8 @@ header,
     margin: 0 auto 2em;
 }
 
-.section-two-image-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .feature-image {
+    width: 100%;
     border-radius: 4.6px;
     margin-bottom: 1em;
 }
@@ -133,11 +130,24 @@ footer {
 
 @media (min-width: 480px) {
     .section-two-image-container {
-        flex-direction: row;
+        display: flex;
         justify-content: space-between;
     }
     
     .feature-image {
-        width: 48.8%;     
+        width: 48.8%;        
+    }
+}
+
+@media (min-width: 768px) {
+    header,
+    section,
+    footer {
+        padding: 2.875em 0;        
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-right: 0.5em;
     }
 }
