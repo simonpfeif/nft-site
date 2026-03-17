@@ -125,6 +125,8 @@ footer {
     color: #5f29a3;
 }
 
+/* ----- NAVIGATION ----- */
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -171,6 +173,20 @@ ul {
     section,
     footer {
         padding: 2.875em 0;        
+    }
+    
+    header .container,
+    nav ul {
+        display: flex;
+    }
+    
+    header .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-left: 1.25em;
     }
     
     .btn {
